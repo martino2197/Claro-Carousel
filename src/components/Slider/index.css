@@ -1,0 +1,130 @@
+
+.slide-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:white;
+}
+
+.flex-container {
+    max-width: 320px;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: hidden;
+    white-space: nowrap;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    min-width: 150px;
+    border-radius:  0.75rem;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-color: #ef3f3f;
+    background-color: white;
+    white-space: normal;
+}
+
+.image {
+    margin-left: 10px;
+    margin-right: 10px;
+    max-width: 100%;
+    height: 200px;
+    object-fit: contain;
+    margin-top: 10px;
+}
+
+.information {
+    color: black;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.75rem;
+}
+
+.name-price {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    justify-content: space-around;
+    min-width: 100%;
+}
+
+.name {
+    text-align: start;
+    margin-top: 0px;
+    margin-bottom: 0.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    max-width: 100%;
+}
+
+.price {
+    text-align: start;
+    margin-top: 0px;
+    margin-bottom: 0.5rem;
+    margin-left: 1rem;
+    max-width: 100%;
+    font-weight: 500;
+}
+
+.description {
+    max-height: 50px;
+    font-size: small;
+    text-align: start;
+    margin-top: 0px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.shop-button {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    background-color: #ef3f3f;
+    border: transparent;
+    border-radius: 25px;
+}
+
+.shop {
+    color: white;
+    margin: 0.25rem;
+}
+
+.arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 25px;
+    max-height: 50px;
+    margin: 0px;
+    padding: 0px;
+    border: transparent;
+    border-radius: 7px;
+    background-color: #efefef;
+    transition: all 0.5s ease;
+}
+
+.arrow:hover {
+    background-color: grey;
+    cursor: pointer;
+  }
+
+@media (min-width: 768px) {
+    .flex-container {
+        max-width: 640px;
+    }
+  }
+
+@media (min-width: 1024px) {
+    .flex-container {
+        max-width: 800px;
+    }
+}
